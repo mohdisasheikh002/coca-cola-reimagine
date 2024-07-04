@@ -31,6 +31,11 @@ body {
   filter: contrast(1.5);
 }
 
+@media (max-width: 30cm) {
+  .loader video {
+    width: 60%;
+  }
+}
 .wrapper {
   position: relative;
   width: 100%;
@@ -108,6 +113,7 @@ body {
   }
   .wrapper .nav .left {
     width: 33%;
+    border-bottom: 1px solid #fff;
   }
   .wrapper .nav .left a {
     display: none;
@@ -121,6 +127,7 @@ body {
   }
   .wrapper .nav .right {
     width: 34%;
+    border-bottom: 1px solid #fff;
   }
   .wrapper .nav .right i {
     display: none;
@@ -209,6 +216,10 @@ body {
   .wrapper .content .sec1 {
     padding: 3.5vmax 2.5vmax;
     padding-bottom: 9.6vmax;
+  }
+  .wrapper .content .sec1 .imgbox {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
   }
   .wrapper .content .sec1 .imgbox .logo {
     top: 52%;
@@ -347,6 +358,7 @@ body {
     top: 47%;
     height: 43vmax;
     width: 28vmax;
+    border: 1px solid #fff;
   }
   .wrapper .content .sec2 .center .caneholder .cane {
     top: 47%;
@@ -357,6 +369,7 @@ body {
   }
   .wrapper .content .sec2 .center .buttonbox button {
     padding: 1.5vmax;
+    border: 1px solid #fff;
   }
   .wrapper .content .sec2 .right {
     text-align: center;
@@ -456,6 +469,9 @@ body {
   }
   .wrapper .content .sec3 .glassbox .left p {
     line-height: 2.5vmax;
+  }
+  .wrapper .content .sec3 .glassbox .left button {
+    border: 1px solid #000;
   }
   .wrapper .content .sec3 .glassbox .right {
     width: 100%;
@@ -746,6 +762,13 @@ body {
     height: 50%;
     width: 100%;
   }
+  .wrapper .content .sec5 .right .contentbox input {
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .wrapper .content .sec5 .right .contentbox button {
+    border: 1px solid #fff;
+  }
 }
 .wrapper .content .footer {
   width: 100%;
@@ -795,8 +818,8 @@ body {
   flex-direction: column;
   gap: 1vmax;
 }
-.wrapper .content .footer .foot-mid .columnholder .column h4 {
-  color: #d5d5d5;
+.wrapper .content .footer .foot-mid .columnholder .column h5 {
+  color: #fff;
   margin-bottom: 0.5vmax;
   letter-spacing: 0.02vmax;
 }
@@ -859,12 +882,15 @@ body {
   }
   .wrapper .content .footer .foot-up {
     padding: 4vmax 0;
+    border-bottom: 1px solid #fff;
   }
   .wrapper .content .footer .foot-up a {
     padding: 0.6vmax 1.2vmax;
+    border: 1px solid #fff;
   }
   .wrapper .content .footer .foot-mid {
     padding: 5vmax 0;
+    border-bottom: 1px solid #fff;
   }
   .wrapper .content .footer .foot-mid .columnholder {
     display: flex;
@@ -902,6 +928,7 @@ body {
   }
   .wrapper .content .footer .foot-mid .columnholder .c4 a {
     padding: 1.3vmax 1.5vmax;
+    border: 1px solid #fff;
   }
   .wrapper .content .footer .foot-mid .columnholder .c4 i {
     font-size: 2vmax;

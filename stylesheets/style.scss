@@ -33,6 +33,14 @@ body {
   }
 }
 
+@media (max-width: 30cm) {
+  .loader {
+    video {
+      width: 60%;
+    }
+  }
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -117,6 +125,7 @@ body {
       padding: 0 2.5vmax;
       .left {
         width: 33%;
+        border-bottom: 1px solid #fff;
         a {
           display: none;
         }
@@ -132,6 +141,7 @@ body {
 
       .right {
         width: 34%;
+        border-bottom: 1px solid #fff;
         i {
           display: none;
         }
@@ -231,6 +241,9 @@ body {
         padding-bottom: 9.6vmax;
 
         .imgbox {
+          border-left: 1px solid #fff;
+          border-right: 1px solid #fff;
+
           .logo {
             top: 52%;
             height: 30%;
@@ -396,6 +409,7 @@ body {
             top: 47%;
             height: 43vmax;
             width: 28vmax;
+            border: 1px solid #fff;
           }
 
           .caneholder {
@@ -408,6 +422,7 @@ body {
           .buttonbox {
             button {
               padding: 1.5vmax;
+              border: 1px solid #fff;
             }
 
             gap: 2.5vmax;
@@ -525,6 +540,10 @@ body {
 
             p {
               line-height: 2.5vmax;
+            }
+
+            button {
+              border: 1px solid #000;
             }
           }
 
@@ -866,6 +885,17 @@ body {
         .right {
           height: 50%;
           width: 100%;
+
+          .contentbox {
+            input {
+              border: none;
+              border-bottom: 1px solid #fff;
+            }
+
+            button {
+              border: 1px solid #fff;
+            }
+          }
         }
       }
     }
@@ -922,8 +952,8 @@ body {
             flex-direction: column;
             gap: 1vmax;
 
-            h4 {
-              color: #d5d5d5;
+            h5 {
+              color: #fff;
               margin-bottom: 0.5vmax;
               letter-spacing: 0.02vmax;
             }
@@ -1000,14 +1030,17 @@ body {
 
         .foot-up {
           padding: 4vmax 0;
+          border-bottom: 1px solid #fff;
 
           a {
             padding: 0.6vmax 1.2vmax;
+            border: 1px solid #fff;
           }
         }
 
         .foot-mid {
           padding: 5vmax 0;
+          border-bottom: 1px solid #fff;
 
           .columnholder {
             display: flex;
@@ -1051,6 +1084,7 @@ body {
 
               a {
                 padding: 1.3vmax 1.5vmax;
+                border: 1px solid #fff;
               }
 
               i {
