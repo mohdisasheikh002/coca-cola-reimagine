@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://companieslogo.com/img/orig/KO-b23a2a5e.png?t=1684129869"
+      type="image/x-icon"
+    />
+    <title>The Coca-Cola Company</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <video src="./assets/videos/loader.mp4" autoplay muted></video>
+    </div>
+    <div class="wrapper">
+      <div class="cursor"></div>
+      <div class="nav">
+        <div class="left">
+          <a href="#flavours" class="fs5 magnet">Flavours</a>
+          <a href="#experiences" class="fs5 magnet">Brands</a>
+          <a href="#experiences" class="fs5 magnet">Experiences</a>
+          <a href="#about" class="fs5 magnet">Support</a>
+        </div>
+        <img src="./assets/images/wlogo.png" class="logo magnet alt="" />
+        <div class="right">
+          <i class="ri-search-line fs4 magnet"></i>
+          <i class="ri-user-3-line fs4 magnet"></i>
+          <button class="fs5 menubtn magnet">
+            <i class="ri-menu-line fs4"></i>
+          </button>
+        </div>
+      </div>
+      <div class="menubox">
+        <div class="linkbox">
+          <a class="fs1" href="#">Home</a>
+          <a class="fs1" href="#">Work</a>
+          <a class="fs1" href="#">About</a>
+          <a class="fs1" href="#">Contact</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sec1">
+          <div class="imgbox">
+            <img src="./assets/images/wlogo.png" class="logo" alt="" />
+          </div>
+          <div class="row">
+            <h5 class="fs5">
+              Enjoy <br />
+              the moment
+            </h5>
+            <h5 class="fs5">
+              No 18 <br />
+              No Alcohol
+            </h5>
+          </div>
+        </div>
+
+        <div class="section sec2">
+          <div class="left">
+            <h1 class="fs1">
+              Coca Cola <br />
+              Original
+            </h1>
+            <p class="fs5">
+              Coca-Cola Zero is a carbonate soft drink with no sugar content
+              specially formulated to achieve a unique taste
+            </p>
+            <button class="embtn fs5 animbtn magnet">Explore more</button>
+          </div>
+          <div class="center">
+            <div class="showbox"></div>
+            <div class="caneholder">
+              <img
+                src="./assets/images/regular.png"
+                class="cane current magnet"
+                alt=""
+              />
+              <img src="./assets/images/diet.png" class="cane" alt="" />
+              <img src="./assets/images/zero.png" class="cane" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button onclick="sec2Animations.moveCane('prev')">
+                <i class="ri-arrow-left-s-line prevbtn fs4"></i>
+              </button>
+              <h5 class="fs5"><span class="number">1</span>/3</h5>
+              <button onclick="sec2Animations.moveCane('next')">
+                <i class="ri-arrow-right-s-line nextbtn fs4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <h4 class="fs4">Nutrition Facts</h4>
+            <div class="row r1">
+              <div class="box">
+                <h5 class="fs5">Calories</h5>
+                <h3 class="fs3" id="calories">140</h3>
+              </div>
+              <div class="box">
+                <h5 class="fs5">Total fat</h5>
+                <h3 class="fs3" id="total-fat">0g</h3>
+              </div>
+              <div class="box">
+                <h5 class="fs5">Sodium</h5>
+                <h3 class="fs3" id="sodium">45mg</h3>
+              </div>
+            </div>
+            <div class="row r2">
+              <div class="box">
+                <h5 class="fs5">Carbohydrate</h5>
+                <h3 class="fs3" id="carbohydrate">39g</h3>
+              </div>
+              <div class="box">
+                <h5 class="fs5">Protein</h5>
+                <h3 class="fs3" id="protein">0g</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section sec3 blendmode">
+          <div class="glassbox">
+            <div class="left">
+              <h1 class="fs1"><span class="counter">0</span>+</h1>
+              <h3 class="fs4">Years Of Refreshing The World</h3>
+              <p class="fs5">
+                The Coca‑Cola Company has been refreshing the world and making a
+                difference for over 137 years. Explore our Purpose & Vision,
+                History and more.
+              </p>
+              <button class="fs5 magnet">Learn More</button>
+            </div>
+            <div class="right">
+              <div class="right-box">
+                <h2 class="fs4">Global Reach:</h2>
+                <p class="fs5">
+                  Our extensive network and global presence ensure your brand
+                  reaches a wide audience.
+                </p>
+              </div>
+              <div class="right-box">
+                <h2 class="fs4">Innovative Solutions:</h2>
+                <p class="fs5">
+                  We thrive on creativity and innovation, pushing the boundaries
+                  to create memorable experiences.
+                </p>
+              </div>
+              <div class="right-box">
+                <h2 class="fs4">Shared Values:</h2>
+                <p class="fs5">
+                  We partner with brands that share our commitment to
+                  sustainability, quality, and community engagement.
+                </p>
+              </div>
+              <div class="right-box">
+                <h2 class="fs4">Mutual Growth:</h2>
+                <p class="fs5">
+                  Our collaborations are built on mutual respect and growth,
+                  ensuring long-term success for all parties involved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section sec4">
+          <div class="boxholder bh1">
+            <div class="imgbox">
+              <img
+                src="https://image.adsoftheworld.com/klgbp5bpsnw9p3blik3dmbkbccj1"
+                alt=""
+                data-speed=".75"
+              />
+            </div>
+            <div class="contentbox blendmode">
+              <h2 class="fs2">Ambition of Driven Record</h2>
+              <p class="fs5">
+                Our strategy is centered around people—our consumers and
+                employees—and driving sustainable solutions that build
+                resilience into our business to respond to current and future
+                challenges, while creating positive change for the planet.
+              </p>
+              <button class="fs5 magnet">More about us</button>
+            </div>
+          </div>
+          <div class="boxholder bh2">
+            <div class="imgbox">
+              <img src="./assets/images/man.png" alt="" data-speed=".75" />
+            </div>
+            <div class="contentbox blendmode">
+              <h2 class="fs2">Coca‑Cola Company Jobs</h2>
+              <p class="fs5">
+                We seek employees that embrace change, champion diversity and
+                push for progress. Your skills and experience will help us
+                navigate the ever-changing global landscape and guide us into
+                the next chapter and beyond.
+              </p>
+              <button class="fs5 magnet">Explore Jobs</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section sec5 blendmode">
+          <div class="left">
+            <div class="row rowup">
+              <div class="boxholder boxup">
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/fresca-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/powerade-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/ades-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/fresca-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/powerade-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/ades-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/fresca-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/powerade-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/ades-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row rowdown">
+              <div class="boxholder boxdown">
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/vitaminwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/topo-chico-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/bodyarmor-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/vitaminwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/topo-chico-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/bodyarmor-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/vitaminwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/topo-chico-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/bodyarmor-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row rowup">
+              <div class="boxholder boxup">
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/costa-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/smartwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/sprite-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/costa-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/smartwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/sprite-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/costa-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/smartwater-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="https://www.coca-colacompany.com/content/dam/company/us/en/brands/logos/sprite-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="contentbox">
+              <h1 class="fs1">Power of Collaboration</h1>
+              <p class="fs5">
+                At Coca-Cola, we believe that great things are achieved through
+                strong partnerships. Our collaborated brands are a testament to
+                the power of working together towards common goals.
+              </p>
+              <input type="text" placeholder="Choose your brand" class="fs5" />
+              <button class="fs5 magnet">Contact Us</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer blendmode">
+          <div class="foot-up">
+            <img src="./assets/images/wlogo.png" class="logo magnet" />
+            <a href="#" class="fs5">
+              <i class="ri-map-pin-2-line fs5"></i> India | English
+            </a>
+          </div>
+          <div class="foot-mid">
+            <div class="columnholder">
+              <div class="column c1">
+                <h5 class="fs5">ABOUT US</h5>
+                <ul>
+                  <li><a href="#" class="fs5">Our Company</a></li>
+                  <li><a href="#" class="fs5">Media center</a></li>
+                  <li><a href="#" class="fs5">History</a></li>
+                  <li><a href="#" class="fs5">Careers</a></li>
+                  <li><a href="#" class="fs5">Leadership</a></li>
+                </ul>
+              </div>
+              <div class="column c2">
+                <h5 class="fs5">NEED HELP?</h5>
+                <ul>
+                  <li><a href="#" class="fs5">FAQ</a></li>
+                  <li><a href="#" class="fs5">Sitemap</a></li>
+                  <li><a href="#" class="fs5">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="column c3">
+                <ul>
+                  <li>
+                    <a href="#" class="fs5">California Notice at Collection</a>
+                  </li>
+                  <li><a href="#" class="fs5">Terms Of Use</a></li>
+                  <li><a href="#" class="fs5">Privacy Policy</a></li>
+                  <li>
+                    <a href="#" class="fs5">Cookies Settings</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="c4">
+                <div class="social">
+                  <a href="#" class="fs5"><i class="ri-twitter-x-line"></i></a>
+                  <a href="#" class="fs5"><i class="ri-instagram-line"></i></a>
+                  <a href="#" class="fs5"><i class="ri-youtube-fill"></i></a>
+                  <a href="#" class="fs5"><i class="ri-facebook-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot-low">
+            <p class="fs5">
+              © 2024 The Coca‑Cola Company. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/gsap/gsap.min.js"></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="./scripts/anim.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

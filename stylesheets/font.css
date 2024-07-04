@@ -1,0 +1,49 @@
+@font-face {
+  src: url("../fonts/Manrope-Regular.ttf");
+  font-family: "manrope";
+}
+
+.fs1 {
+  font-size: 6vmax;
+  font-family: "manrope";
+  font-weight: 500;
+  letter-spacing: -0.1vmax;
+}
+
+.fs2 {
+  font-size: 4vmax;
+  font-family: "manrope";
+  font-weight: 500;
+  letter-spacing: -0.1vmax;
+}
+
+.fs3 {
+  font-size: 3vmax;
+  font-family: "manrope";
+  font-weight: 500;
+  letter-spacing: -0.05vmax;
+}
+
+.fs4 {
+  font-size: 1.5vmax;
+  font-family: "manrope";
+  font-weight: 500;
+  letter-spacing: 0.03vmax;
+}
+
+.fs5 {
+  font-size: 1vmax;
+  font-family: "manrope";
+  font-weight: 500;
+  letter-spacing: 0.03vmax;
+}
+
+@media (max-width: 30cm) {
+  .fs4 {
+    font-size: 2.5vmax;
+  }
+
+  .fs5 {
+    font-size: 1.5vmax;
+  }
+}
