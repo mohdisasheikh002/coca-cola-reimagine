@@ -7,7 +7,6 @@ const scroller = ScrollSmoother.create({
   smooth: 1.5,
   effects: true,
   normalizeScroll: true,
-  overflow: "hidde",
 });
 
 scroller.scrollTrigger.refresh();

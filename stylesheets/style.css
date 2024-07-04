@@ -13,6 +13,22 @@ body {
   cursor: none;
 }
 
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-10px, -10px);
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+  mix-blend-mode: luminosity;
+}
+
 .loader {
   position: absolute;
   top: 0;
@@ -25,6 +41,7 @@ body {
   justify-content: center;
   background-color: #000;
   transition: 0.25s linear;
+  pointer-events: none;
 }
 .loader video {
   width: 20%;
@@ -39,21 +56,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-}
-.wrapper .cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-10px, -10px);
-  transition: opacity 0.3s ease-out;
-  opacity: 0;
-  mix-blend-mode: luminosity;
 }
 .wrapper .nav {
   position: fixed;
@@ -305,7 +307,7 @@ body {
   position: absolute;
   bottom: 3vmax;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0%);
   display: flex;
   align-items: center;
   gap: 1.5vmax;
@@ -317,6 +319,7 @@ body {
   transition: 0.25s linear;
   color: #fff;
   background-color: transparent;
+  cursor: none;
 }
 .wrapper .content .sec2 .center .buttonbox button:hover {
   background-color: #fff;
@@ -343,7 +346,7 @@ body {
   .wrapper .content .sec2 {
     flex-direction: column;
     padding: 8vmax 2.5vmax;
-    padding-bottom: 12vmax;
+    padding-bottom: 4.5vmax;
   }
   .wrapper .content .sec2 .left {
     width: 100%;
@@ -365,11 +368,18 @@ body {
     height: 35%;
   }
   .wrapper .content .sec2 .center .buttonbox {
+    top: 47%;
+    transform: translate(-50%, -50%);
+    gap: 0;
+    width: 100%;
+    padding: 0 1.6vmax;
+    justify-content: space-between;
     gap: 2.5vmax;
   }
   .wrapper .content .sec2 .center .buttonbox button {
     padding: 1.5vmax;
     border: 1px solid #fff;
+    cursor: none;
   }
   .wrapper .content .sec2 .right {
     text-align: center;
@@ -380,7 +390,6 @@ body {
   }
   .wrapper .content .sec2 .right h4 {
     margin-bottom: 2vmax;
-    display: none;
   }
 }
 .wrapper .content .sec3 {
@@ -762,17 +771,21 @@ body {
     height: 50%;
     width: 100%;
   }
+  .wrapper .content .sec5 .right .contentbox p {
+    line-height: 2.7vmax;
+  }
   .wrapper .content .sec5 .right .contentbox input {
     border: none;
     border-bottom: 1px solid #fff;
   }
   .wrapper .content .sec5 .right .contentbox button {
     border: 1px solid #fff;
+    margin-top: 4vmax;
   }
 }
 .wrapper .content .footer {
   width: 100%;
-  background: #000;
+  background-color: #000;
   padding: 0 13vmax;
 }
 .wrapper .content .footer .foot-up {

@@ -14,6 +14,22 @@ body {
   cursor: none;
 }
 
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-10px, -10px);
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+  mix-blend-mode: luminosity;
+}
+
 .loader {
   position: absolute;
   top: 0;
@@ -26,6 +42,7 @@ body {
   justify-content: center;
   background-color: #000;
   transition: 0.25s linear;
+  pointer-events: none;
 
   video {
     width: 20%;
@@ -44,22 +61,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-
-  .cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-10px, -10px);
-    transition: opacity 0.3s ease-out;
-    opacity: 0;
-    mix-blend-mode: luminosity;
-  }
 
   .nav {
     position: fixed;
@@ -344,7 +345,7 @@ body {
           position: absolute;
           bottom: 3vmax;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translate(-50%, 0%);
           display: flex;
           align-items: center;
           gap: 1.5vmax;
@@ -356,6 +357,7 @@ body {
             transition: 0.25s linear;
             color: #fff;
             background-color: transparent;
+            cursor: none;
 
             &:hover {
               background-color: #fff;
@@ -391,7 +393,7 @@ body {
       .sec2 {
         flex-direction: column;
         padding: 8vmax 2.5vmax;
-        padding-bottom: 12vmax;
+        padding-bottom: 4.5vmax;
 
         .left {
           width: 100%;
@@ -420,9 +422,17 @@ body {
           }
 
           .buttonbox {
+            top: 47%;
+            transform: translate(-50%, -50%);
+            gap: 0;
+            width: 100%;
+            padding: 0 1.6vmax;
+            justify-content: space-between;
+
             button {
               padding: 1.5vmax;
               border: 1px solid #fff;
+              cursor: none;
             }
 
             gap: 2.5vmax;
@@ -438,7 +448,6 @@ body {
 
           h4 {
             margin-bottom: 2vmax;
-            display: none;
           }
         }
       }
@@ -887,6 +896,10 @@ body {
           width: 100%;
 
           .contentbox {
+            p {
+              line-height: 2.7vmax;
+            }
+
             input {
               border: none;
               border-bottom: 1px solid #fff;
@@ -894,6 +907,7 @@ body {
 
             button {
               border: 1px solid #fff;
+              margin-top: 4vmax;
             }
           }
         }
@@ -902,7 +916,7 @@ body {
 
     .footer {
       width: 100%;
-      background: #000;
+      background-color: #000;
       padding: 0 13vmax;
 
       .foot-up {
