@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   cursor: none;
+  overflow-x: hidden;
 }
 
 .cursor {
@@ -891,7 +892,6 @@ body {
 }
 @media (max-width: 30cm) {
   .wrapper .content .footer {
-    height: 137vh;
     padding: 0 2.5vmax;
   }
   .wrapper .content .footer .foot-up {
@@ -954,5 +954,11 @@ body {
     justify-content: center;
     color: #fff;
     padding: 5vmax 0;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .content .footer {
+    height: 137vh;
+    padding: 0 2.5vmax;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ body {
   height: 100%;
   width: 100%;
   cursor: none;
+  overflow-x: hidden;
 }
 
 .cursor {
@@ -1040,7 +1041,6 @@ body {
 
     @media (max-width: 30cm) {
       .footer {
-        height: 137vh;
         padding: 0 2.5vmax;
 
         .foot-up {
@@ -1117,6 +1117,12 @@ body {
           color: #fff;
           padding: 5vmax 0;
         }
+      }
+    }
+    @media (max-width: 15cm) {
+      .footer {
+        height: 137vh;
+        padding: 0 2.5vmax;
       }
     }
   }
