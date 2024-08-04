@@ -891,6 +891,7 @@ body {
 }
 @media (max-width: 30cm) {
   .wrapper .content .footer {
+    height: 137vh;
     padding: 0 2.5vmax;
   }
   .wrapper .content .footer .foot-up {
